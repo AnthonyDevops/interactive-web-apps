@@ -35,7 +35,7 @@ function updateBookStatus(bookId, status) {
   const checkoutButton = document.querySelector(`#${bookId} .checkout`);
   const checkinButton = document.querySelector(`#${bookId} .checkin`);
 
-  
+
   bookStatusElement.style.color = STATUS_MAP[status].color;
   reserveButton.disabled = !STATUS_MAP[status].canReserve;
   checkoutButton.disabled = !STATUS_MAP[status].canCheckout;
@@ -45,3 +45,4 @@ function updateBookStatus(bookId, status) {
 updateBookStatus("book1", "overdue");
 updateBookStatus("book2", "reserved");
 updateBookStatus("book3", "shelf");
+
