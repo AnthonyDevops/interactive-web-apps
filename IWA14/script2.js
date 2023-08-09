@@ -1,12 +1,10 @@
 // script.js
 
 function add(b,c) {
-b*c
 return b+c
 }
 
 function multiply(a,b,c){
-a+b*c
 return (a+b)*c
 }
 
