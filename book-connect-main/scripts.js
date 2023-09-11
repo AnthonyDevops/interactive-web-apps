@@ -147,7 +147,17 @@ dataSettingsForm.addEventListener("submit", (submit) => {
   document.documentElement.style.setProperty('--color-light', themes[result.theme].light);
   dataSettingsOverlay.open = false;
 });
-
+// Changes the theme from light to dark
+const themes = {
+  day: {
+    dark: "10, 10, 20",
+    light: "255, 255, 255",
+  },
+  night: {
+    dark: "255, 255, 255",
+    light: "10, 10, 20",
+  },
+};
 dataSettingsCloseButton.addEventListener("click",() => {
   // click event for closing settings overlay
   dataSettingsOverlay.open= false
