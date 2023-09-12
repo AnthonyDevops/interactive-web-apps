@@ -117,7 +117,7 @@ dataListButton.addEventListener('click', () => {
 
     // Disable the button when no more books are available
     const remaining = matches.length - page * BOOKS_PER_PAGE
-    dataListButton.disabled = remaining >= 0
+    dataListButton.disabled = remaining <= 0
 
     // Update the "Show more" button text
     dataListButton.innerHTML = `
